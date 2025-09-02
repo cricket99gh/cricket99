@@ -1,0 +1,19 @@
+[project]
+name = "cricket99"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "cricket99", email = "cricket.uah99@uah.edu" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.maturin]
+module-name = "cricket99._core"
+python-packages = ["cricket99"]
+python-source = "src"
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
